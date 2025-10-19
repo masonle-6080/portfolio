@@ -11,7 +11,8 @@ export default function More() {
     films: false,
     books: false,
     podcasts: false,
-    hobbies: false
+    hobbies: false,
+    otherFavorites: false
   })
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -436,6 +437,40 @@ export default function More() {
                       <a href='https://youtu.be/wAnDWfEIwoE?si=pgb0A2zVzHLstgJn' className='text-muted-foreground'>The Art of Learning & Living Life | Josh Waitzkin</a>
                       <a href='https://youtu.be/VKJNwcLKsl8?si=GvpE_nztRLAe5hXw' className='text-muted-foreground'>Why Most Smart People Become Stupid - Ryan Holiday</a>
                     </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Other Favorite Things Tab */}
+          <div className='border rounded-lg'>
+            <button
+              onClick={() => toggleTab('otherFavorites')}
+              className='w-full p-6 flex items-center justify-between hover:bg-muted/50 transition-colors'
+            >
+              <div className='flex items-center gap-3'>
+                <Grid3X3 className='h-6 w-6' />
+                <h2 className='text-2xl font-bold text-left'>Other Favorite Things</h2>
+              </div>
+              {expandedTabs.otherFavorites ? (
+                <ChevronDown className='h-5 w-5' />
+              ) : (
+                <ChevronRight className='h-5 w-5' />
+              )}
+            </button>
+            {expandedTabs.otherFavorites && (
+              <div className='px-6 pb-6 border-t'>
+                <div className='pt-6 grid lg:grid-cols-3 gap-12'>
+                  <div className='lg:col-span-1'>
+                    <div className='space-y-4 text-muted-foreground'>
+                      <p className='text-sm uppercase tracking-wider font-medium'>Random Favorites</p>
+                    </div>
+                  </div>
+                  <div className='lg:col-span-2 space-y-2'>
+                  <a href='https://www.youtube.com/watch?v=rKhfFBbVtFg' className='text-muted-foreground'>The Death of Socrates: How To Read A Painting
+                  </a>
+              
                   </div>
                 </div>
               </div>
