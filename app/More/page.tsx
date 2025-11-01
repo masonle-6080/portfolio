@@ -468,9 +468,10 @@ export default function More() {
                     </div>
                   </div>
                   <div className='lg:col-span-2 space-y-2'>
-                  <a href='https://www.youtube.com/watch?v=rKhfFBbVtFg' className='text-muted-foreground'>The Death of Socrates: How To Read A Painting
+                  <a href='https://www.youtube.com/watch?v=rKhfFBbVtFg' className='text-muted-foreground'>The Death of Socrates: How To Read A Painting</a>
+                  <a href='https://www.youtube.com/watch?v=_tbcsJHdFfs' className='text-muted-foreground'>We Are All Artists | A Short Film
                   </a>
-              
+
                   </div>
                 </div>
               </div>
