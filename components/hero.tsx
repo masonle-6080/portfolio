@@ -25,7 +25,7 @@ export function Hero() {
             </Button>
             <div className="flex items-center gap-3">
               <Button variant="ghost" size="icon" asChild>
-                <a href="/Mason_Le's_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/Mason_Le_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-5 h-5" />
                   <span className="sr-only">Resume</span>
                 </a>
