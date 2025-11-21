@@ -24,12 +24,12 @@ export function Hero() {
               </a>
             </Button>
             <div className="flex items-center gap-3">
-              <Button variant="ghost" size="icon" asChild>
+              {/*<Button variant="ghost" size="icon" asChild>
                 <a href="/Mason_Le_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-5 h-5" />
                   <span className="sr-only">Resume</span>
                 </a>
-              </Button>
+              </Button>*/}
               <Button variant="ghost" size="icon" asChild>
                 <a href="https://www.linkedin.com/in/mason-le-68b75a274/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5" />
